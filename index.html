@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+
+<h1>Java Can Change Images</h1>
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.jpg" width="216" height="300">
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script type="text/javascript">
+    function changeImage() {
+        var bulbImage = document.getElementById('myImage');
+        if (bulbImage.src.match("bulbon")) {
+            bulbImage.src = "pic_bulboff.jpg";
+        } else {
+            bulbImage.src = "pic_bulbon.jpg";
+        }
+        }
+        </script>
+    
+</body>
+</html>
